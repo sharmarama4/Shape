@@ -9,6 +9,7 @@ public class ShapeApp {
 
         Square square = new Square(25, 35, 78);
         Square copy = new Square(square);
+
         Shape[] shapes = new Shape[10];
         shapes[0] = rectangle;
         shapes[1] = circle;
@@ -26,13 +27,13 @@ public class ShapeApp {
         //System.out.println(square);
        // System.out.println(triangle);
        // System.out.println(isoScelesTriangle);
-      printShapes(shapes);
+     printShapes(shapes);
 
     }
 
     private static void printShapes(Shape[] shapes) {
-        for (Shape s : shapes) {
-            System.out.println(s.getClass());
+       for (Shape s : shapes) {
+           System.out.println(s.getClass());
             System.out.println("Area:" + s.getArea());
             System.out.println("perimeter:" + s.getPerimeter());
             System.out.printf("position:(%d,%d)", s.getX(), s.getY());
@@ -50,6 +51,6 @@ public class ShapeApp {
             }
 
         }
-        System.out.println();
+       System.out.println();
     }
 }
